@@ -14,8 +14,8 @@ const songs = [{
 },
   {
     id:3,
-    songname:`Dread Mar I<br>
-    <div class="subtitle">Vivi En Do</div>`,
+    songname:`Therion<br>
+    <div class="subtitle">Via Nocturna</div>`,
     poster: "covers/3.jpg"
 },
   {
@@ -77,7 +77,7 @@ let monedas = 0;
 corazon.addEventListener('click', ()=> {
   let m = document.querySelector("#numeros");
 	m.innerHTML = 0;
-    for(let k = 1;k < 10;k++){
+    for(let k = 0;k < 10;k++){
 	/* m.insertAdjacentHTML("beforeend", ); */
 }
 m.innerHTML = monedas;
@@ -85,14 +85,14 @@ monedas++;
 });
 
 logo.addEventListener('click',()=>{
-document.querySelector('.menu_side').style.width = '1%';
-document.querySelector('.song_side').style.width = '99%';
+document.querySelector('.menu_side').style.width = '0%';
+document.querySelector('.song_side').style.width = '100%';
 logo.style.display = 'none';
 logo2.style.display = 'flex';
 })
 logo2.addEventListener('click',()=>{
-document.querySelector('.menu_side').style.width = '23%';
-document.querySelector('.song_side').style.width = '77%';
+document.querySelector('.menu_side').style.width = '25%';
+document.querySelector('.song_side').style.width = '75%';
 logo.style.display = 'flex';
 logo2.style.display = 'none';
 })
