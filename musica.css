@@ -24,7 +24,7 @@ header{
 
 header .menu_side, .song_side{
     width: 25%;
-    height: 88%;
+    height: 92%;
     background: #611bbba1;
     box-shadow: 5px 0px 2px #090f1f;
     color: #fff;
@@ -806,7 +806,7 @@ header .menu_side .menu_song li h5 .subtitle{
         font-size: 30px;
         color: #fff;
         margin-top: -200px;
-        margin-left: -70px;
+        margin-left: -30px;
         cursor: pointer;
         outline: none;
         display: flex;
@@ -823,7 +823,7 @@ header .menu_side .menu_song li h5 .subtitle{
         display: flex;
         padding: 15px;
         width: 220px;
-        margin-left: 120px;
+        margin-left: 140px;
         margin-bottom: 60px;
         z-index: 2;
       }
