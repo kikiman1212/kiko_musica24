@@ -14,48 +14,61 @@
         <div class="menu_side">
             <h1></h1>
             <div class="playlist">
-                <h4 class="active"><span></span><i><img src="icons/play.svg" alt="" width="20"></i>Lista 10 canciones</h4>
+                <h4 class="active"><span></span><i><img src="icons/play.svg" alt="" width="20"></i>Lista 7 canciones</h4>
                
             </div>
 
             <!-- aqui    onclick="Musica('audio/atlantis.mp3','covers/1.png','Alan Walker - Atlantis')"  -->
             <div class="menu_song">
-                <li class="songItem"><span>01</span><img src=""><h5> <br> <div class="subtitle"></div></h5>
+                
+
+                <li class="songItem"><span>01</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
                 <i class="bi playListPlay bi-play-circle-fill" id="1"></i></li>
 
-                <li class="songItem" ><span>02</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
+                <li class="songItem"><span>02</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
                 <i class="bi playListPlay bi-play-circle-fill" id="2"></i></li>
 
-                <li class="songItem"><span>03</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
+                <li class="songItem"><span>03</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
                 <i class="bi playListPlay bi-play-circle-fill" id="3"></i></li>
 
-                <li class="songItem"><span>04</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
+                <li class="songItem"><span>04</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
                 <i class="bi playListPlay bi-play-circle-fill" id="4"></i></li>
 
-                <li class="songItem"><span>05</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
+                <li class="songItem"><span>05</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
                 <i class="bi playListPlay bi-play-circle-fill" id="5"></i></li>
 
                 <li class="songItem"><span>06</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
                 <i class="bi playListPlay bi-play-circle-fill" id="6"></i></li>
 
-                <li class="songItem"><span>07</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
+                <li class="songItem"><span>07</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
                 <i class="bi playListPlay bi-play-circle-fill" id="7"></i></li>
 
-                <li class="songItem"><span>08</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
-                <i class="bi playListPlay bi-play-circle-fill" id="8"></i></li>
+                <div class="playlist">
+                    <h4 class="active"><span></span><i><img src="icons/play.svg" alt="" width="20"></i>Lista 6 videos</h4>
+                   
+                </div>
+        <li class="songItem"><span>08</span><img src=""><h5> <br> <div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="8" onclick="aparecer(atlantis)"></i></li>
 
-                <li class="songItem"><span>09</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
-                <i class="bi playListPlay bi-play-circle-fill" id="9"></i></li>
+        <li class="songItem"><span>09</span><img src="" alt=""><h5><br><div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="9" onclick="aparecer(lacrimosa)"></i></li>
 
-                <li class="songItem"><span>10</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
-                <i class="bi playListPlay bi-play-circle-fill" id="10"></i></li>
+        <li class="songItem"><span>10</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="10" onclick="aparecer(conejo)"></i></li>
 
-                <li class="songItem"><span>11</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
-                <i class="bi playListPlay bi-play-circle-fill" id="11"></i></li>
-            </div>        
+        <li class="songItem"><span>11</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="11" onclick="aparecer(gus2)"></i></li>
+
+        <li class="songItem"><span>12</span><img src="" alt="video"><h5><br> <div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="12" onclick="aparecer('video/12.mp4')"></i></li>
+        
+        <li class="songItem"><span>13</span><img src="" alt="video"><h5><br> <div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="13" onclick="aparecer(alejandra)"></i></li>
+
+    </div>        
 </div>
         <div class="song_side">
-            <nav> 
+            <nav>
                 <ul>
                     <li>Mi Musica<span></span></li>
                 </ul>
@@ -63,6 +76,7 @@
                     <i class="bi"><img src="" alt="" width="20px"></i>
                     <input type="text" placeholder="Buscar musica..." id="">
                 </div>
+
                 <div class="user">
                     <img id="logo2" src="icons/chevron-right.svg" alt="">
                     <img id="logo" src="icons/chevron-left.svg" alt="">
@@ -70,13 +84,13 @@
             </nav>
             <div class="content">
                 <h1 id="titulo">Evanences - My Inmortal</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reiciendis magni kiko System 2024 <br>laboriosam nesciunt maxime inventore neceOfficia laborum architecto tempora?</p>
-                <div class="buttons">
-                    <button >Play</button>
-                    <button id="pauseAudio">Pause</button>
-                </div>
+                <p>Lorem ipsum. Explicabo reiciendis magni kiko System 2024</p>
+               
             </div>
-            <img id="poster" src="covers/4.png" alt="">    
+            <img id="poster" src="covers/4.png" alt=""> 
+
+                    <iframe id="videoyoutube" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   
     </div>
 <!--            otra seccion                                -->
         <div class="master_play">
@@ -86,18 +100,18 @@
                 <div class="wave1"></div>
             </div>
             <img src="poster/001.jpg" alt="" id="poster_master_play">
-            <h5 id="title">Kikiman
+            <h5 id="title">Kikiman 1212
                 <div class="subtitle"></div>
             </h5>
             <span id="currentStart"></span>
             <span id="currentEnd"></span>
            
               <!--   esta es mia para reproducir la musica  -->  
-            <div class="icon1">
-                <img src="icons/shuffle .svg" alt="" id="shuffle">
-                <img src="icons/chevron-bar-left.svg" alt="" id="anterior"> 
-                <i class=" bi bi-play-circle-fill" id="masterPlay"></i>
-                <img src="icons/chevron-bar-right.svg" alt="" id="siguiente">
+            <div class="icon1" id="iconos">
+                <img src="icons/shuffle .svg" alt="Aleatorio" id="shuffle">
+                <img src="icons/chevron-bar-left.svg" alt="Anterior" id="anterior"> 
+                <i class=" bi bi-play-circle-fill" id="masterPlay" alt="Reproducir"></i>
+                <img src="icons/chevron-bar-right.svg" alt="Siguiente" id="siguiente">
                 <i id="corazon" class="bi bi-heart"><p id="numeros">0</p></i>
             </div>
             <div class="barra1">

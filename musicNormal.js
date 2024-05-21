@@ -1,9 +1,18 @@
+
+const conejo = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+const  alanWalker = "https://www.youtube.com/embed/p1rUuxCJfIU?si=wkDM26__NTnlHVHB";
+const lacrimosa = "https://www.youtube.com/embed/H4Ji9tsbW7g?si=J5tP3cpZxisRhKUM";
+const gus = "https://www.youtube.com/embed/3MAArO-D89Y?si=DUVqvuhMznFqutUK";
+const gus2 = "https://www.youtube.com/embed/sWOYtgBoBiE?si=NGDTOLpL0OgOmhDF";
+const atlantis = "https://www.youtube.com/embed/n03IDJcsy5g?si=d-f2HqQdDNU5pJI9";
+const alejandra = "https://www.youtube.com/embed/Udoj4YJFR_c?si=5tmmKhFdxcU-qw2D";
+
 const music = new Audio('audio/2.mp3');
 //lista del id y las caratulas y titulos 
 const songs = [{
     id:1,
-    songname:`Alan Walker<br>
-    <div class="subtitle">Atlantis</div>`,
+    songname:`Cafe Tacuba<br>
+    <div class="subtitle">Futuro</div>`,
     poster: "covers/1.jpg"
 },
   {
@@ -38,41 +47,63 @@ const songs = [{
 },
   {
     id:7,
-    songname:`Lacrimosa<br>
-    <div class="subtitle">Der Morgen Danach</div>`,
+    songname:`LP<br>
+    <div class="subtitle">Todo lo que pudimos ser</div>`,
     poster: "covers/7.jpg"
 },
   {
     id:8,
     songname:`Alan Walker<br>
-    <div class="subtitle">Darkside</div>`,
+    <div class="subtitle">tlantis</div>`,
     poster: "covers/8.jpg"
 },
   {
     id:9,
-    songname:`Cafe Tacuba<br>
-    <div class="subtitle">Futuro</div>`,
+    songname:`Lacrimosa<br>
+    <div class="subtitle">En concierto Luna Festival 2016</div>`,
     poster: "covers/9.jpg"
 },
   {
     id:10,
-    songname:`LP<br>
-    <div class="subtitle">Todo lo que pudimos ser</div>`,
+    songname:`Big Bunny<br>
+    <div class="subtitle">Cortometraje</div>`,
     poster: "covers/10.jpg"
 },
   {
     id:11,
-    songname:`Se acabo la lista<br>
-    <div class="subtitle">Agrega mas canciones</div>`,
+    songname:`Gustavo<br>
+    <div class="subtitle">Examen para cinta roja</div>`,
     poster: "covers/11.jpg"
+},
+  {
+    id:12,
+    songname:`Chayane Video<br>
+    <div class="subtitle">Torero</div>`,
+    poster: "covers/12.jpg"
+},
+  {
+    id:13,
+    songname:`Alejandra Guzman<br>
+    <div class="subtitle">En concierto</div>`,
+    poster: "covers/13.jpg"
 }
 ]
+
+
+function aparecer (vid){
+  document.getElementById('videoyoutube').src = vid;
+  
+} 
+
 
 //mi logo-------------------***************************************************************************************
 let logo = document.getElementById('logo');
 let logo2 = document.getElementById('logo2');
 let corazon = document.getElementById('corazon');
 let monedas = 0;
+let iconos = document.getElementById('iconos');
+let iframe = document.getElementById('videoyoutube');
+
 
 corazon.addEventListener('click', ()=> {
   let m = document.querySelector("#numeros");
@@ -105,7 +136,7 @@ Array.from(document.getElementsByClassName('songItem')).forEach((e,i)=> {
 
 //para el boton de play, que arranque la musica y cambie el boton a pause y arranque el wave
 let masterPlay = document.getElementById('masterPlay');
-let pausa = document.getElementById('pauseAudio');
+
 let wave = document.getElementById('wave');
 
 
@@ -115,6 +146,7 @@ masterPlay.addEventListener('click', ()=>{
     wave.classList.add('active1');
     masterPlay.classList.remove('bi-play-circle-fill')
     masterPlay.classList.add('bi-pause-fill')
+
   }else{
     music.pause();
     wave.classList.remove('active1');
@@ -122,10 +154,7 @@ masterPlay.addEventListener('click', ()=>{
     masterPlay.classList.remove('bi-pause-fill')
   }
 })
-pausa.addEventListener('click', ()=>{
- music.pause();
- wave.classList.remove('active1');
-})
+
 
 
 //para saber el numero de id de la musica
@@ -142,6 +171,17 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     wave.classList.add('active1');
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
+    if(index > 7 ) {
+      iconos.style.display = 'none';
+      iframe.style.display = 'flex';
+      music.pause();
+    } else {
+      iconos.style.display = 'flex';
+      iframe.style.display = 'none';
+      music.play();
+    }
+
+
     let songTitles = songs.filter((els) =>{
       return els.id == index;
   });
@@ -172,6 +212,14 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     wave.classList.add('active1');
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
+    if(index > 7 ) {
+      iconos.style.display = 'none';
+      iframe.style.display = 'flex';
+    } else {
+      iconos.style.display = 'flex';
+      iframe.style.display = 'none';
+      $video.pause();
+    }
     
     let songTitles = songs.filter((els) =>{
         return els.id == index;
@@ -195,6 +243,14 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     wave.classList.add('active1');
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
+    if(index > 7 ) {
+      iconos.style.display = 'none';
+      iframe.style.display = 'flex';
+    } else {
+      iconos.style.display = 'flex';
+      iframe.style.display = 'none';
+      $video.pause();
+    }
     
     let songTitles = songs.filter((els) =>{
       return els.id == index;
@@ -210,27 +266,8 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
 
 //BARRA DE AUDIO
 
-const $progress = document.querySelector('#progressAudio')
-music.addEventListener('loadedmetadata', handleLoaded)
-music.addEventListener('timeupdate', handleTimeUpdate)
 
-function handleLoaded() {
-  $progress.max = music.duration
-  console.log('ha cargado mi audio ', music.duration)
-}
 
-function handleTimeUpdate() {
-  $progress.value = music.currentTime
-  // console.log('tiempo actual', $video.currentTime)
-}
-
-$progress.addEventListener('input', handleInput)
-
-function handleInput() {
-
-  music.currentTime = $progress.value
-  console.log($progress.value)
-}
 
 ////para reproducir cuando se acabe la cancion.........................................
 music.addEventListener('ended', ()=>{
@@ -289,4 +326,26 @@ const music_random = ()=>{
   console.log('kiko dice siguiente cancion');
 }
 
+// barra de avance del audio
+  
+const $progress = document.querySelector('#progressAudio')
+music.addEventListener('loadedmetadata', handleLoaded)
+music.addEventListener('timeupdate', handleTimeUpdate)
 
+function handleLoaded() {
+  $progress.max = music.duration
+  console.log('ha cargado mi audio ', music.duration)
+}
+
+function handleTimeUpdate() {
+  $progress.value = music.currentTime
+  // console.log('tiempo actual', $video.currentTime)
+}
+
+$progress.addEventListener('input', handleInput)
+
+function handleInput() {
+
+  music.currentTime = $progress.value
+  console.log($progress.value)
+}
