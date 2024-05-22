@@ -41,7 +41,7 @@ const songs = [{
 },
   {
     id:6,
-    songname:`Younglu<br>
+    songname:`Yungblud<br>
     <div class="subtitle">Despreciable</div>`,
     poster: "covers/6.jpg"
 },
