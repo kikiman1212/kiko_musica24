@@ -218,7 +218,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     } else {
       iconos.style.display = 'flex';
       iframe.style.display = 'none';
-      $video.pause();
+     
     }
     
     let songTitles = songs.filter((els) =>{
@@ -249,7 +249,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     } else {
       iconos.style.display = 'flex';
       iframe.style.display = 'none';
-      $video.pause();
+     
     }
     
     let songTitles = songs.filter((els) =>{
