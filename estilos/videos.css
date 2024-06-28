@@ -28,6 +28,7 @@ header .menu_side, .song_side{
     background: #611bbba1;
     box-shadow: 5px 0px 2px #090f1f;
     color: #fff;
+    transition: .6s linear;
 }
 
 header .song_side{
@@ -767,6 +768,7 @@ header .menu_side .menu_song li h5 .subtitle{
                 background: #611bbba1;
                 box-shadow: 5px 0px 2px #090f1f;
                 color: #fff;
+                transition: .6s linear;
             }
             header .menu_side .menu_song li h5 {
                 font-size: 11px;
@@ -838,6 +840,7 @@ header .menu_side .menu_song li h5 .subtitle{
         padding: 25px;
         z-index: 2;
         transition: .3s linear;
+        display: none;
     }
     .barra1 input{
         cursor: pointer;

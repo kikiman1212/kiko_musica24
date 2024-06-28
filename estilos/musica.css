@@ -28,6 +28,7 @@ header .menu_side, .song_side{
     background: #611bbba1;
     box-shadow: 5px 0px 2px #090f1f;
     color: #fff;
+    transition: .6s linear;
 }
 
 header .song_side{

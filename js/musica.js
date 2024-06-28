@@ -15,8 +15,8 @@ const songs = [{
 },
   {
     id:3,
-    songname:`Alejandra Guzman<br>
-    <div class="subtitle">Mix</div>`,
+    songname:`Rolo Paredes<br>
+    <div class="subtitle">Todo lo que perdi por ti</div>`,
     poster: "covers/3.jpg"
 },
   {
@@ -33,14 +33,14 @@ const songs = [{
 },
   {
     id:6,
-    songname:`Yungblud<br>
-    <div class="subtitle">Despreciable</div>`,
+    songname:`Vlad Landeros<br>
+    <div class="subtitle">Soledad</div>`,
     poster: "covers/6.jpg"
 },
   {
     id:7,
-    songname:`LP<br>
-    <div class="subtitle">Todo lo que pudimos ser</div>`,
+    songname:`Nostra Morte<br>
+    <div class="subtitle">Nostra Morte</div>`,
     poster: "covers/7.jpg"
 },
   {

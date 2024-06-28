@@ -6,6 +6,8 @@ const regue = "https://www.youtube.com/embed/UOIpqGDI0yE?si=uUj_fF5RKlMMKpSn";
 const gus2 = "https://www.youtube.com/embed/sWOYtgBoBiE?si=NGDTOLpL0OgOmhDF";
 const atlantis = "https://www.youtube.com/embed/n03IDJcsy5g?si=d-f2HqQdDNU5pJI9";
 const nostra = "https://www.youtube.com/embed/jX3XhPcBk8w?si=-K3SeC9FxyjcIPD5";
+const remix = "https://www.youtube.com/embed/p1rUuxCJfIU?si=S7wHy7_-Q9Md2q24";
+const olimpico = "https://www.youtube.com/embed/dkPS6t84qg4?si=O1p5cS7HrsaRLg2b";
 
 const music = new Audio('audio/2.mp3');
 //lista del id y las caratulas y titulos 
@@ -47,9 +49,21 @@ const songs = [{
 },
   {
     id:18,
+    songname:`Alan Walker<br>
+    <div class="subtitle">Remix</div>`,
+    poster: "covers/18.jpg"
+},
+  {
+    id:19,
+    songname:`Dimash<br>
+    <div class="subtitle">Olimpico</div>`,
+    poster: "covers/19.jpg"
+},
+  {
+    id:20,
     songname:`No mas videos<br>
     <div class="subtitle">Saludos kiko music 24</div>`,
-    poster: "covers/18.jpg"
+    poster: "covers/20.jpg"
 }
 ]
 
