@@ -709,28 +709,7 @@ header .menu_side .menu_song li h5 .subtitle{
         height: 40px;
     }
 /* barras ****************************************************************************** */
-           .barra input{
-            cursor: pointer;
-            position: absolute;
-            inset-block-end: 0;
-            inset-inline: 0;
-            display: flex;
-            padding: 15px;
-            width: 350px;
-            margin-left: 300px;
-          }
-        
-          .barra1 input{
-            cursor: pointer;
-            position: absolute;
-            inset-block-end: 0;
-            inset-inline: 0;
-            display: flex;
-            padding: 25px;
-            width: 300px;
-            margin-left: 600px;
-          }
-
+          
           #numeros{
             position: relative;
             font-size: 15px;
@@ -842,18 +821,7 @@ header .menu_side .menu_song li h5 .subtitle{
         transition: .3s linear;
         display: none;
     }
-    .barra1 input{
-        cursor: pointer;
-        position: absolute;
-        inset-block-end: 0;
-        inset-inline: 0;
-        display: flex;
-        padding: 15px;
-        width: 220px;
-        margin-left: 120px;
-        margin-bottom: 50px;
-        z-index: 2;
-      }
+
       header .master_play h5 {
         width: 13px;
         /* border: 1px solid #fff; */
