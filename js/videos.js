@@ -10,8 +10,6 @@ const remix = "https://www.youtube.com/embed/p1rUuxCJfIU?si=S7wHy7_-Q9Md2q24";
 const olimpico = "https://www.youtube.com/embed/dkPS6t84qg4?si=O1p5cS7HrsaRLg2b";
 const rococo = "https://www.youtube.com/embed/IJRd9LMfMUY?si=Rxxtvkpz0cc-ntg6";
 
-
-const music = new Audio('audio/2.mp3');
 //lista del id y las caratulas y titulos 
 const songs = [{
     id:12,
@@ -101,7 +99,32 @@ logo2.style.display = 'none';
 })
 /*----------------------------------------------------------------------------------------- */
 
-
+//para saber el numero de id de la musica
+let index = 0;
+let poster_master_play = document.getElementById('poster_master_play');
+Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
+  e.addEventListener('click',(el)=>{
+   index = el.target.id;
+/*    console.log(abc); */
+    music.src = `audio/${index}.mp3`;
+    poster_master_play.src = `covers/${index}.jpg`;
+    kikoFoto.src = `poster/${index}.png`;
+    music.play();
+    wave.classList.add('active1');
+    masterPlay.classList.remove('bi-play-fill');
+    masterPlay.classList.add('bi-pause-fill');
+  
+    let songTitles = songs.filter((els) =>{
+      return els.id == index;
+  });
+    songTitles.forEach(elss =>{
+      let {songname} = elss;
+      title.innerHTML = songname;
+      kikoTitulo.innerHTML = songname;
+    })
+    
+  })
+});
 
 
 
