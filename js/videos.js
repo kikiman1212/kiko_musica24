@@ -9,7 +9,10 @@ const nostra = "https://www.youtube.com/embed/jX3XhPcBk8w?si=-K3SeC9FxyjcIPD5";
 const remix = "https://www.youtube.com/embed/p1rUuxCJfIU?si=S7wHy7_-Q9Md2q24";
 const olimpico = "https://www.youtube.com/embed/dkPS6t84qg4?si=O1p5cS7HrsaRLg2b";
 const rococo = "https://www.youtube.com/embed/IJRd9LMfMUY?si=ZwRqPVhvpR0VqNtE";
-const jerry = "https://www.youtube.com/embed/_ETK2KUSMTs?si=Jrg0YFpUeUvnqgRt";
+const therion = "https://www.youtube.com/embed/kU0Fah-cCbs?si=8OC_kX2mAMZu4PEt";
+
+
+
 
 const music = new Audio('audio/2.mp3');
 //lista del id y las caratulas y titulos 
@@ -61,8 +64,21 @@ const songs = [{
     <div class="subtitle">Olimpico</div>`,
     poster: "covers/19.jpg"
 },
+  
   {
     id:20,
+    songname:`Panteon Rococo<br>
+    <div class="subtitle">Arreglame el alma</div>`,
+    poster: "covers/20.jpg"
+},
+  {
+    id:21,
+    songname:`Therion<br>
+    <div class="subtitle">en vivo Wacken Open Air 2016</div>`,
+    poster: "covers/21.jpg"
+},
+  {
+    id:22,
     songname:`No mas videos<br>
     <div class="subtitle">Saludos kiko music 24</div>`,
     poster: "covers/20.jpg"
@@ -76,11 +92,7 @@ function aparecer (vid){
 //mi logo-------------------***************************************************************************************
 let logo = document.getElementById('logo');
 let logo2 = document.getElementById('logo2');
-let corazon = document.getElementById('corazon');
-let monedas = 0;
-let iconos = document.getElementById('iconos');
 let iframe = document.getElementById('videoyoutube');
-
 
 corazon.addEventListener('click', ()=> {
   let m = document.querySelector("#numeros");
@@ -303,12 +315,5 @@ function handleInput() {
   music.currentTime = $progress.value
   console.log($progress.value)
 }
-
-
-
-
-
-
-
 
 

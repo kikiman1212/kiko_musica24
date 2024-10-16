@@ -44,12 +44,14 @@
 
         <li class="songItem"><span>08</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
         <i class="bi playListPlay bi-play-circle-fill" id="19" onclick="aparecer(olimpico)"></i></li>
+
+	  <li class="songItem"><span>09</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="20" onclick="aparecer(rococo)"></i></li>
+
+	  <li class="songItem"><span>10</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="21" onclick="aparecer(therion)"></i></li>
                 
-        <li class="songItem"><span>09</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
-        <i class="bi playListPlay bi-play-circle-fill" id="20" onclick="rococo(olimpico)"></i></li>
-                
-        <li class="songItem"><span>10</span><img src="" alt=""><h5><br> <div class="subtitle"></div></h5>
-        <i class="bi playListPlay bi-play-circle-fill" id="21" onclick="jerry(olimpico)"></i></li>
+      
 
     </div>        
 </div>
@@ -73,7 +75,7 @@
                 <p>Lorem ipsum. Explicabo reiciendis magni kiko System 2024</p>
                
             </div>
-            <img id="poster" src="covers/4.png" alt=""> 
+            <img id="poster" src="poster/2.png" alt=""> 
 
                     <iframe id="videoyoutube" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                    
@@ -100,7 +102,9 @@
                 <img src="icons/chevron-bar-right.svg" alt="Siguiente" id="siguiente">
                 <i id="corazon" class="bi bi-heart"><p id="numeros"></p></i>
             </div>
-          
+            <div class="barra1">
+                <input type="range" id="progressAudio" min="0" max="100" step="1">
+            </div>
            
             <audio id="musica" class="miAudio" autoplay>
                 <source src="" type="audio/mp3">
