@@ -9,6 +9,7 @@ const nostra = "https://www.youtube.com/embed/jX3XhPcBk8w?si=-K3SeC9FxyjcIPD5";
 const remix = "https://www.youtube.com/embed/p1rUuxCJfIU?si=S7wHy7_-Q9Md2q24";
 const olimpico = "https://www.youtube.com/embed/dkPS6t84qg4?si=O1p5cS7HrsaRLg2b";
 const rococo = "https://www.youtube.com/embed/IJRd9LMfMUY?si=ZwRqPVhvpR0VqNtE";
+const jerry = "https://www.youtube.com/embed/_ETK2KUSMTs?si=Jrg0YFpUeUvnqgRt";
 
 const music = new Audio('audio/2.mp3');
 //lista del id y las caratulas y titulos 
