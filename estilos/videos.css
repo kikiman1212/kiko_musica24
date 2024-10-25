@@ -175,6 +175,23 @@ header .menu_side .menu_song li h5 .subtitle{
 
         }
 
+         /* Define la animación */
+@keyframes rotacion {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Aplica la animación a la clase .rotar */
+  .gira {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    animation: rotacion 3s linear infinite; /* 3 segundos, puede ajustarse */
+  }
+  
         header .master_play .wave {
             width: 30px;
             height: 30px;
@@ -708,28 +725,7 @@ header .menu_side .menu_song li h5 .subtitle{
         width: 40px;
         height: 40px;
     }
-/* barras ****************************************************************************** */
-           .barra input{
-            cursor: pointer;
-            position: absolute;
-            inset-block-end: 0;
-            inset-inline: 0;
-            display: flex;
-            padding: 15px;
-            width: 350px;
-            margin-left: 300px;
-          }
-        
-          .barra1 input{
-            cursor: pointer;
-            position: absolute;
-            inset-block-end: 0;
-            inset-inline: 0;
-            display: flex;
-            padding: 25px;
-            width: 300px;
-            margin-left: 600px;
-          }
+
 
           #numeros{
             position: relative;
