@@ -83,7 +83,6 @@ const songs = [{
     songname:`Gustavo<br>
     <div class="subtitle">examen cinta roja avanzada 2</div>`,
     poster: "covers/22.jpg"
-}
 },
   {
     id:23,
