@@ -129,20 +129,17 @@ Array.from(document.getElementsByClassName('songItem')).forEach((e,i)=> {
 let masterPlay = document.getElementById('masterPlay');
 
 let wave = document.getElementById('wave');
-let gira = document.getElementById('poster_master_play');
 
 masterPlay.addEventListener('click', ()=>{
   if(music.paused || music.currentTime <= 0){
     music.play();
-    wave.classList.add('active1');
-    gira.classList.add('gira');	 
+    wave.classList.add('active1'); 
     masterPlay.classList.remove('bi-play-circle-fill')
     masterPlay.classList.add('bi-pause-fill')
 
   }else{
     music.pause();
-    wave.classList.remove('active1');
-    gira.classList.remove('gira');	 
+    wave.classList.remove('active1');	 
     masterPlay.classList.add('bi-play-circle-fill')
     masterPlay.classList.remove('bi-pause-fill')
   }
@@ -159,8 +156,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     poster_master_play.src = `covers/${index}.jpg`;
     kikoFoto.src = `poster/${index}.png`;
     music.play();
-    wave.classList.add('active1');
-    gira.classList.add('gira');	  
+    wave.classList.add('active1');  
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
     
@@ -193,8 +189,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     poster_master_play.src = `covers/${index}.jpg`;
     kikoFoto.src = `poster/${index}.png`;
     music.play();
-    wave.classList.add('active1');
-    gira.classList.add('gira');	 
+    wave.classList.add('active1'); 
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
     
@@ -219,7 +214,6 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     kikoFoto.src = `poster/${index}.png`;
     music.play();
     wave.classList.add('active1');
-    gira.classList.add('gira');	 
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
     
@@ -248,8 +242,7 @@ music.addEventListener('ended', ()=>{
   poster_master_play.src = `covers/${index}.jpg`;
   kikoFoto.src = `poster/${index}.png`;
   music.play();
-  wave.classList.add('active1');
-  gira.classList.add('gira');	 
+  wave.classList.add('active1');	 
   masterPlay.classList.remove('bi-play-fill');
   masterPlay.classList.add('bi-pause-fill');
   
@@ -283,8 +276,7 @@ const music_random = ()=>{
   poster_master_play.src = `covers/${index}.jpg`;
   kikoFoto.src = `poster/${index}.png`;
   music.play();
-  wave.classList.add('active1');
-  gira.classList.add('gira');	 
+  wave.classList.add('active1'); 
   masterPlay.classList.remove('bi-play-fill');
   masterPlay.classList.add('bi-pause-fill');
   
