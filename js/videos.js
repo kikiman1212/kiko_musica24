@@ -10,6 +10,7 @@ const remix = "https://www.youtube.com/embed/p1rUuxCJfIU?si=S7wHy7_-Q9Md2q24";
 const olimpico = "https://www.youtube.com/embed/dkPS6t84qg4?si=O1p5cS7HrsaRLg2b";
 const rococo = "https://www.youtube.com/embed/IJRd9LMfMUY?si=ZwRqPVhvpR0VqNtE";
 const therion = "https://www.youtube.com/embed/kU0Fah-cCbs?si=8OC_kX2mAMZu4PEt";
+const gus2 = "https://www.youtube.com/embed/hPcA59ZGksU?si=IiFOXEkuHPqvl9Z6";
 
 
 
@@ -79,9 +80,16 @@ const songs = [{
 },
   {
     id:22,
+    songname:`Gustavo<br>
+    <div class="subtitle">examen cinta roja avanzada 2</div>`,
+    poster: "covers/22.jpg"
+}
+},
+  {
+    id:23,
     songname:`No mas videos<br>
     <div class="subtitle">Saludos kiko music 24</div>`,
-    poster: "covers/20.jpg"
+    poster: "covers/23.jpg"
 }
 ]
 
