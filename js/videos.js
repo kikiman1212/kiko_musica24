@@ -1,7 +1,7 @@
 
 const conejo = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
 const  alanWalker = "https://www.youtube.com/embed/p1rUuxCJfIU?si=wkDM26__NTnlHVHB";
-const lacrimosa = "https://www.youtube.com/embed/H4Ji9tsbW7g?si=J5tP3cpZxisRhKUM";
+const lacrimosa = "https://www.youtube.com/embed/kX5-pumtSpI?si=ytvB8CcXKvX9QdeY";
 const regue = "https://www.youtube.com/embed/UOIpqGDI0yE?si=uUj_fF5RKlMMKpSn";
 const gus1 = "https://www.youtube.com/embed/sWOYtgBoBiE?si=NGDTOLpL0OgOmhDF";
 const atlantis = "https://www.youtube.com/embed/n03IDJcsy5g?si=d-f2HqQdDNU5pJI9";
@@ -11,8 +11,8 @@ const olimpico = "https://www.youtube.com/embed/dkPS6t84qg4?si=O1p5cS7HrsaRLg2b"
 
 const therion = "https://www.youtube.com/embed/kU0Fah-cCbs?si=8OC_kX2mAMZu4PEt";
 const gus2 = "https://www.youtube.com/embed/hPcA59ZGksU?si=IiFOXEkuHPqvl9Z6";
-
-
+const copicat = "https://www.youtube.com/embed/g38r4pEqqbo?si=j7EzoorAWEhDuHde";
+const avalon = "https://www.youtube.com/embed/_J_3-Te8UUo?si=6O80_PtqZv0uYtG_";
 
 
 const music = new Audio('audio/2.mp3');
@@ -26,7 +26,7 @@ const songs = [{
   {
     id:13,
     songname:`Lacrimosa<br>
-    <div class="subtitle">En concierto Luna Festival 2016</div>`,
+    <div class="subtitle">Memoria - Lament World Tour GDL 2025</div>`,
     poster: "covers/13.jpg"
 },
   {
@@ -84,8 +84,20 @@ const songs = [{
     <div class="subtitle">examen cinta roja avanzada 2</div>`,
     poster: "covers/22.jpg"
 },
-  {
+			     {
     id:23,
+    songname:`Lacrimosa Lament World Tour GDL 2025<br>
+    <div class="subtitle">Copicat</div>`,
+    poster: "covers/13.jpg"
+},
+			     {
+    id:24,
+    songname:`Lacrimosa Lament World Tour GDL 2025<br>
+    <div class="subtitle">Avalon</div>`,
+    poster: "covers/13.jpg"
+},
+  {
+    id:25,
     songname:`No mas videos<br>
     <div class="subtitle">Saludos kiko music 24</div>`,
     poster: "covers/23.jpg"
@@ -322,5 +334,6 @@ function handleInput() {
   music.currentTime = $progress.value
   console.log($progress.value)
 }
+
 
 
