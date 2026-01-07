@@ -8,12 +8,12 @@ const atlantis = "https://www.youtube.com/embed/n03IDJcsy5g?si=d-f2HqQdDNU5pJI9"
 const nostra = "https://www.youtube.com/embed/jX3XhPcBk8w?si=-K3SeC9FxyjcIPD5";
 const remix = "https://www.youtube.com/embed/p1rUuxCJfIU?si=S7wHy7_-Q9Md2q24";
 const olimpico = "https://www.youtube.com/embed/dkPS6t84qg4?si=O1p5cS7HrsaRLg2b";
-
+const games = "https://www.youtube.com/embed/3TVsTTz4rWE?si=h_l3tS9lkJBKjYVo";
 const therion = "https://www.youtube.com/embed/kU0Fah-cCbs?si=8OC_kX2mAMZu4PEt";
 const gus2 = "https://www.youtube.com/embed/hPcA59ZGksU?si=IiFOXEkuHPqvl9Z6";
 const copicat = "https://www.youtube.com/embed/g38r4pEqqbo?si=j7EzoorAWEhDuHde";
 const avalon = "https://www.youtube.com/embed/_J_3-Te8UUo?si=6O80_PtqZv0uYtG_";
-
+const memoria ="https://www.youtube.com/embed/kX5-pumtSpI?si=SnHYDWqX92cMpxba";
 
 const music = new Audio('audio/2.mp3');
 //lista del id y las caratulas y titulos 
@@ -68,9 +68,9 @@ const songs = [{
   
   {
     id:20,
-    songname:`Panteon Rococo<br>
-    <div class="subtitle">Arreglame el alma</div>`,
-    poster: "covers/20.jpg"
+    songname:`Retrobat 6.0<br>
+    <div class="subtitle">Mis Video juegos</div>`,
+    poster: "covers/games.jpg"
 },
   {
     id:21,
@@ -88,20 +88,26 @@ const songs = [{
     id:23,
     songname:`Lacrimosa Lament World Tour GDL 2025<br>
     <div class="subtitle">Copicat</div>`,
-    poster: "covers/13.jpg"
+    poster: "covers/24.jpg"
 },
 			     {
     id:24,
     songname:`Lacrimosa Lament World Tour GDL 2025<br>
     <div class="subtitle">Avalon</div>`,
-    poster: "covers/13.jpg"
+    poster: "covers/lacrimosa avalon.jpg"
 },
   {
     id:25,
+    songname: `Lacrimosa Lament World Tour GDL 2025<br>
+    <div class="subtitle">Memoria</div>`,
+    poster: "covers/13.jpg"
+},
+{
+    id:26,
     songname:`No mas videos<br>
     <div class="subtitle">Saludos kiko music 24</div>`,
     poster: "covers/23.jpg"
-}
+}			   
 ]
 
 function aparecer (vid){
@@ -334,6 +340,7 @@ function handleInput() {
   music.currentTime = $progress.value
   console.log($progress.value)
 }
+
 
 
 
