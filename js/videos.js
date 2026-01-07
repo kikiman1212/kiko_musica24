@@ -1,7 +1,7 @@
 
 const conejo = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
 const  alanWalker = "https://www.youtube.com/embed/p1rUuxCJfIU?si=wkDM26__NTnlHVHB";
-const lacrimosa = "https://www.youtube.com/embed/kX5-pumtSpI?si=ytvB8CcXKvX9QdeY";
+const lacrimosa = "https://www.youtube.com/embed/H4Ji9tsbW7g?si=Iq_LMxqR5tH6NSaN";
 const regue = "https://www.youtube.com/embed/UOIpqGDI0yE?si=uUj_fF5RKlMMKpSn";
 const gus1 = "https://www.youtube.com/embed/sWOYtgBoBiE?si=NGDTOLpL0OgOmhDF";
 const atlantis = "https://www.youtube.com/embed/n03IDJcsy5g?si=d-f2HqQdDNU5pJI9";
@@ -26,8 +26,8 @@ const songs = [{
   {
     id:13,
     songname:`Lacrimosa<br>
-    <div class="subtitle">Memoria - Lament World Tour GDL 2025</div>`,
-    poster: "covers/13.jpg"
+    <div class="subtitle">Luna Festival 2016</div>`,
+    poster: "covers/133.jpg"
 },
   {
     id:14,
@@ -340,6 +340,7 @@ function handleInput() {
   music.currentTime = $progress.value
   console.log($progress.value)
 }
+
 
 
 
