@@ -88,7 +88,7 @@ const songs = [{
     id:23,
     songname:`Lacrimosa Lament World Tour GDL 2025<br>
     <div class="subtitle">Copicat</div>`,
-    poster: "covers/24.jpg"
+    poster: "covers/24.JPG"
 },
 			     {
     id:24,
@@ -340,6 +340,7 @@ function handleInput() {
   music.currentTime = $progress.value
   console.log($progress.value)
 }
+
 
 
 
